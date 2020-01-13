@@ -5,6 +5,7 @@ INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.x
 INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml:1:1-26:12
 MERGED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] C:\Users\jose8\abasteceAqui\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:@react-native-community_async-storage] C:\Users\jose8\abasteceAqui\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] C:\Users\jose8\abasteceAqui\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\jose8\.gradle\caches\transforms-2\files-2.1\bfa096014d863c14c3c2e23f908aae10\AndroidManifest.xml:2:1-13:12
@@ -134,6 +135,8 @@ uses-sdk
 INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\jose8\abasteceAqui\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] C:\Users\jose8\abasteceAqui\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\jose8\abasteceAqui\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:@react-native-community_async-storage] C:\Users\jose8\abasteceAqui\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_async-storage] C:\Users\jose8\abasteceAqui\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\jose8\abasteceAqui\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41

@@ -5,11 +5,13 @@ import Maps from '~/pages/Mapa';
 import Welcome from '~/pages/Welcome'
 import Search from '~/pages/Search';
 
-const Routes = createAppContainer(
+const Routes = (userLogged = false) => createAppContainer(
     createSwitchNavigator({
         Welcome,
         Search,
-        Maps
-    }))
+    }, {
+        initialRouteName: userLogged ? 'Search' : 'Welcome',
+    }
+    ))
 
 export default Routes;

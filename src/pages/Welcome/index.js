@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import AsyncStorage from '@react-native-community/async-storage';
 import api from '~/services/api';
 
@@ -7,6 +8,12 @@ import { View, Text, TextInput, TouchableOpacity, StatusBar, ActivityIndicator, 
 import styles from './styles';
 
 export default class Welcome extends Component {
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func,
+    }).isRequired,
+  }
+
   state = {
     username: '',
     loading: false,
@@ -54,20 +61,20 @@ export default class Welcome extends Component {
 
         {error && <Text style={styles.error}>Usuário inexistente</Text>}
 
-          <View style={styles.form}>
-            <TextInput
-              style={styles.input}
-              autoCapitalize="none"
-              autoCorrect={false}
-              placeholder="Digite seu usuário"
-              underlineColorAndroid="transparent"
-              value={username}
-              onChangeText={text => this.setState({ username: text })}
-            />
-            <TouchableOpacity style={styles.button} onPress={this.signIn}>
-              {loading ? <ActivityIndicator size="small" color="#FFF" /> : <Text style={styles.buttonText}>Prosseguir</Text>}
-            </TouchableOpacity>
-          </View>
+        <View style={styles.form}>
+          <TextInput
+            style={styles.input}
+            autoCapitalize="none"
+            autoCorrect={false}
+            placeholder="Digite seu usuário"
+            underlineColorAndroid="transparent"
+            value={username}
+            onChangeText={text => this.setState({ username: text })}
+          />
+          <TouchableOpacity style={styles.button} onPress={this.signIn}>
+            {loading ? <ActivityIndicator size="small" color="#FFF" /> : <Text style={styles.buttonText}>Prosseguir</Text>}
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
